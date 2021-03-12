@@ -5,4 +5,5 @@ package com.xiaoxu.controller;
  * @create 2021/3/12 17:30
  */
 public class Test2{
+    public String asdfa;
 }
