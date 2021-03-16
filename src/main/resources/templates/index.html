@@ -8,8 +8,27 @@
     <body>
         <input id="in" value="1"/>
         <button id="star">click</button>
+
+        <table>
+            <tr>
+                <th>人名</th>
+                <th>点赞数</th>
+                <th>操作</th>
+            </tr>
+            <tr >
+                <td >1</td>
+                <td >2</td>
+                <td >
+                    <button id="23" class="d">点赞</button>
+                </td>
+            </tr>
+        </table>
     </body>
     <script>
+        $('.d').click(function(){
+            var name = $(this).parent().parent().find('td:eq(0)').html();
+            alert(name)
+        })
         var url = 'http://localhost:7070/click/'
         $('#star').click(function(){
             $.ajax({
